@@ -11,9 +11,9 @@ repositories {
 jar {
     baseName('multi-project')
     manifest {
-        attributes('Main-Class' : 'ru.clevertec.Main')
-        attributes('Name' : 'multi-project')
-        attributes('Version' : archiveVersion)
+        attributes('Main-Class': 'ru.clevertec.Main')
+        attributes('Name': 'multi-project')
+        attributes('Version': archiveVersion)
 
     }
 }
