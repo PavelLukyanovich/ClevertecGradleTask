@@ -1,4 +1,5 @@
 rootProject.name = 'multi-project'
 include 'utils'
 include 'core'
+include 'api'
 
