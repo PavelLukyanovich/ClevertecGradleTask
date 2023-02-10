@@ -17,6 +17,6 @@ class StringUtilsTest {
     @Test
     public void isPositiveNumber_ifNumberNotPositive_returnFalse() {
 
-        Assertions.assertFalse(stringUtils.isPositiveNumber(str));
+        Assertions.assertFalse(StringUtils.isPositiveNumber(str));
     }
 }

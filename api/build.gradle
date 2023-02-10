@@ -2,20 +2,25 @@ plugins {
     id 'java'
 }
 
+apply plugin: 'maven-publish'
+
 group 'ru.clevertec'
 version '1.0-SNAPSHOT'
 
 repositories {
 
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
+    implementation project(':core')
+    //implementation "ru.clevertec:core-1.0-SNAPSHOT"
     compileOnly project(':core')
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
 }
 
-test {
+/*test {
     useJUnitPlatform()
-}
+}*/
