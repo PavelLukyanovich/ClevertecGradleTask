@@ -32,7 +32,7 @@ test {
 
 gradlePlugin {
     plugins {
-        simplePlugin{
+        simplePlugin {
             id = 'ru.clevertec.myplugin'
             implementationClass = 'ru.clevertec.MyPlugin'
         }
