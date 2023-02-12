@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.clevertec.CustomTestPluginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-12T00:14:25" hostname="ZENBOOK325" time="0.952">
-  <properties/>
-  <testcase name="testPlugin()" classname="ru.clevertec.CustomTestPluginTest" time="0.952"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -1,8 +1,17 @@
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    dependencies {
+        classpath group: 'ru.clevertec',    // Defined in the build.gradle of the plugin
+                name: 'ru.clevertec.Myplugin',       // Defined by the rootProject.name
+                version: '1.0-SNAPSHOT'
+    }
+}
 plugins {
     id 'java'
-    //id 'ru.clevertec.customtestplugin' version '1.0-SNAPSHOT'
 }
-
+apply plugin: 'ru.clevertec.myplugin'
 apply plugin: 'maven-publish'
 
 
@@ -30,7 +39,6 @@ repositories {
 
 dependencies {
 
-    implementation project(':plugin')
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.12.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
