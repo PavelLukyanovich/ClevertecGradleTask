@@ -1,0 +1,40 @@
+plugins {
+    id 'java-gradle-plugin'
+}
+
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
+
+group 'ru.clevertec'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation gradleApi()
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+gradlePlugin {
+    plugins {
+        simplePlugin{
+            id = 'ru.clevertec.myplugin'
+            implementationClass = 'ru.clevertec.MyPlugin'
+        }
+    }
+}
